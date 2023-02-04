@@ -17,9 +17,9 @@ $header_menus = wp_get_nav_menu_items($header_menu_id);
 
 
     <nav class="nettel-navigation">
-        <!--        --><?php //if (function_exists('the_custom_logo')) {
-        //            the_custom_logo();
-        //        } ?>
+        <?php if (function_exists('the_custom_logo')) {
+            the_custom_logo();
+        } ?>
 
         <?php
         if (!empty($header_menus) && is_array($header_menus)) { ?>
@@ -31,16 +31,22 @@ $header_menus = wp_get_nav_menu_items($header_menu_id);
                         $has_children = !empty($child_menu_items) && is_array($child_menu_items);
 
                         if (!$has_children) { ?>
-                            <li class="nav-item">
-                                <a href="<?php esc_url($menu_item->url); ?>"
-                                   class="nav-link"><?php esc_html($menu_item->title); ?></a>
+                            <li class="navigation-item">
+                                <a href="<?php echo esc_url($menu_item->url); ?>"
+                                   class="navigation-link"><?php echo esc_html($menu_item->title); ?></a>
                             </li>
                         <?php } else { ?>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown"
-                                   role="button">Dropdown</a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a href="#" class="dropdown-item">Action</a>
+                            <li class="navigation-item nav-dropdown">
+                                <a href="<?php echo esc_url($menu_item->url); ?>" class="navigation-link nav-dropdown-toggle"
+                                   id="navbarDropdown"
+                                   role="button"><?php echo esc_html($menu_item->title); ?></a>
+                                <div class="nav-dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <?php
+                                    foreach ($child_menu_items as $child_menu_item) { ?>
+                                        <a href="<?php echo esc_url($child_menu_item->url); ?>"
+                                           class="nav-dropdown-item"><?php echo esc_html($child_menu_item->title); ?></a>
+                                    <?php }
+                                    ?>
                                 </div>
                             </li>
                         <?php }
