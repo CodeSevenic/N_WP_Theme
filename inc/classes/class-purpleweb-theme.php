@@ -45,6 +45,30 @@ class PURPLEWEB_THEME {
         ] );
 
         add_theme_support('post-thumbnails');
+
+        add_theme_support('customize-selective-refresh-widgets');
+
+        add_theme_support('automatic-feed-links');
+
+        add_theme_support(
+            'html5',
+            [
+                'search-form',
+                'comment-form',
+                'comment-list',
+                'gallery',
+                'caption',
+                'script',
+                'style'
+            ]
+        );
+
+        add_editor_style();
+        add_theme_support('wp-block-styles');
+
+        add_theme_support('align-wide');
+
+
     }
 
 
