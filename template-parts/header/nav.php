@@ -16,33 +16,34 @@ $header_menus = wp_get_nav_menu_items($header_menu_id);
 ?>
 
 
-
     <nav class="nettel-navigation">
-<!--        --><?php //if (function_exists('the_custom_logo')) {
-//            the_custom_logo();
-//        } ?>
+        <!--        --><?php //if (function_exists('the_custom_logo')) {
+        //            the_custom_logo();
+        //        } ?>
 
         <?php
         if (!empty($header_menus) && is_array($header_menus)) { ?>
             <ul class="navigation-items">
                 <?php
                 foreach ($header_menus as $menu_item) {
-                    if (! $menu_item->menu_item_parent ) {
+                    if (!$menu_item->menu_item_parent) {
                         $child_menu_items = $menu_class->get_child_menu_items($header_menus, $menu_item->ID);
-                        $has_children = ! empty( $child_menu_items ) && is_array( $child_menu_items);
+                        $has_children = !empty($child_menu_items) && is_array($child_menu_items);
 
-                        if ( ! $has_children ) { ?>
+                        if (!$has_children) { ?>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Link</a>
+                                <a href="<?php esc_url($menu_item->url); ?>"
+                                   class="nav-link"><?php esc_html($menu_item->title); ?></a>
                             </li>
-                       <?php } else { ?>
+                        <?php } else { ?>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button">Dropdown</a>
+                                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown"
+                                   role="button">Dropdown</a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a href="#" class="dropdown-item">Action</a>
                                 </div>
                             </li>
-                       <?php }
+                        <?php }
                         ?>
                     <?php }
                 }
