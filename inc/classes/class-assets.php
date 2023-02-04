@@ -33,10 +33,10 @@ class Assets {
         wp_register_style('style-css', get_stylesheet_uri(),[], filemtime
         (PURPLEWEB_DIR_PATH . '/style.css'), 'all');
 
-        wp_register_style('bootstrap-css', PURPLEWEB_DIR_URI . '/assets/src/library/css/bootstrap.min.css',[],false, 'all');
+       // wp_register_style('bootstrap-css', PURPLEWEB_DIR_URI . '/assets/src/library/css/bootstrap.min.css',[],false, 'all');
         // Enqueue styles
         wp_enqueue_style('style-css');
-        wp_enqueue_style('bootstrap-css');
+    //    wp_enqueue_style('bootstrap-css');
 
     }
 
@@ -47,10 +47,10 @@ class Assets {
             filemtime
             (PURPLEWEB_DIR_PATH . '/assets/main.js'), true);
 
-        wp_register_script('bootstrap-js', PURPLEWEB_DIR_URI . '/assets/src/library/js/bootstrap.bundle.min.js',
-            ['jquery'],false, true);
+       // wp_register_script('bootstrap-js', PURPLEWEB_DIR_URI . '/assets/src/library/js/bootstrap.bundle.min.js',
+        //    ['jquery'],false, true);
         // Enqueue scripts
         wp_enqueue_script('main-js');
-        wp_enqueue_script('bootstrap-js');
+       // wp_enqueue_script('bootstrap-js');
     }
 }
