@@ -36,4 +36,23 @@ class Menus
             'purpleweb-footer-menu' => esc_html__('Footer Menu', 'nettel')
         ]);
     }
+
+    public function get_menu_id($location)
+    {
+        // Get all the locations.
+        $locations = get_nav_menu_locations();
+
+        // Get object id by location
+        $menu_id = $locations[$location];
+
+        return !empty($menu_id) ? $menu_id : '';
+    }
+
+    public function get_child_menu_items($menu_array, $parent_id) {
+        $child_menus = [];
+
+        if (!empty($child_array) && is_array($menu_array)) {
+            foreach ($menu_array as $menu)
+        }
+    }
 }
