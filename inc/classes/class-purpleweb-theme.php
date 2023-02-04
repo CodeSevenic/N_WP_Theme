@@ -68,7 +68,10 @@ class PURPLEWEB_THEME {
 
         add_theme_support('align-wide');
 
-
+        global $content_width;
+        if(!isset($content_width)) {
+            $content_width = 1240;
+        }
     }
 
 
