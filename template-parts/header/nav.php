@@ -36,7 +36,12 @@ $header_menus = wp_get_nav_menu_items($header_menu_id);
                                 <a href="#" class="nav-link">Link</a>
                             </li>
                        <?php } else { ?>
-                            <li class="nav-item dropdown"></li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button">Dropdown</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item">Action</a>
+                                </div>
+                            </li>
                        <?php }
                         ?>
                     <?php }
