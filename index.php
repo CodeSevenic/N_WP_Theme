@@ -8,7 +8,7 @@ get_header();
 ?>
 
 <div class="content">
-  Hello World Version
+  Content Blog
 </div>
 
 <?php
