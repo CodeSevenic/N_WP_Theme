@@ -23,7 +23,11 @@ class Menus {
         /**
          * Actions.
          */
-        add_action('init', [$this, 'register_scripts']);
+        add_action('init', [$this, 'register_menus']);
+
+        public function register_menus() {
+            
+        }
 
     }
 }
