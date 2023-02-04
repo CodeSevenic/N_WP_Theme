@@ -10,24 +10,30 @@ namespace PURPLEWEB_THEME\Inc;
 
 use PURPLEWEB_THEME\Inc\Traits\Singleton;
 
-class Menus {
+class Menus
+{
     use Singleton;
 
 
-    protected function __construct() {
+    protected function __construct()
+    {
         // load class.
         $this->setup_hooks();
     }
 
-    protected function setup_hooks() {
+    protected function setup_hooks()
+    {
         /**
          * Actions.
          */
         add_action('init', [$this, 'register_menus']);
+    }
 
-        public function register_menus() {
-            
-        }
-
+    public function register_menus()
+    {
+        register_nav_menus([
+            'purpleweb-header-menu' => esc_html__('Header Menu', 'nettel'),
+            'purpleweb-footer-menu' => esc_html__('Footer Menu', 'nettel')
+        ]);
     }
 }

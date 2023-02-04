@@ -9,19 +9,23 @@ namespace PURPLEWEB_THEME\Inc;
 
 use PURPLEWEB_THEME\Inc\Traits\Singleton;
 
-class PURPLEWEB_THEME {
+class PURPLEWEB_THEME
+{
 
     use Singleton;
 
-    protected function __construct() {
+    protected function __construct()
+    {
         // load class.
 
         Assets::get_instance();
+        Menus::get_instance();
 
         $this->setup_hooks();
     }
 
-    protected function setup_hooks() {
+    protected function setup_hooks()
+    {
         /**
          * Actions.
          */
@@ -30,19 +34,20 @@ class PURPLEWEB_THEME {
 
     }
 
-    public function setup_theme() {
-        add_theme_support( 'title-tag' );
-        add_theme_support( 'custom-logo', [
-            'header-text'          => ['site-title', 'site-description' ],
-            'height'               => 400,
-            'width'                => 400,
-            'flex-height'          => true,
-            'flex-width'           => true,
+    public function setup_theme()
+    {
+        add_theme_support('title-tag');
+        add_theme_support('custom-logo', [
+            'header-text' => ['site-title', 'site-description'],
+            'height' => 400,
+            'width' => 400,
+            'flex-height' => true,
+            'flex-width' => true,
         ]);
-        add_theme_support( 'custom-background', [
+        add_theme_support('custom-background', [
             'default-color' => '#ffffff',
             'default-image' => '',
-        ] );
+        ]);
 
         add_theme_support('post-thumbnails');
 
@@ -69,7 +74,7 @@ class PURPLEWEB_THEME {
         add_theme_support('align-wide');
 
         global $content_width;
-        if(!isset($content_width)) {
+        if (!isset($content_width)) {
             $content_width = 1240;
         }
     }
