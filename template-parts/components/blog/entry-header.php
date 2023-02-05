@@ -14,7 +14,18 @@ $has_post_thumbnail = get_the_post_thumbnail($the_post_id);
     // Feature image
     if ($has_post_thumbnail) { ?>
         <div class="entry-image">
-            <a href="<?php esc_url(get_permalink()); ?>"></a>
+            <a href="<?php echo esc_url(get_permalink()); ?>">
+                <?php
+                the_post_custom_thumbnail(
+                    $the_post_id,
+                    'featured-thumbnail',
+                    [
+                        'sizes' => '(max-width: 370px) 370px, 223px',
+                        'class' => 'attachment-featured-large size-featured-image'
+                    ]
+                );
+                ?>
+            </a>
         </div>
     <?php }
     ?>
