@@ -40,7 +40,9 @@
                 <p>
                     <?php esc_html_e('It seems like we cannot find what you are looking for. Perhaps search can help', 'nettel'); ?>
                 </p>
-            <?php }
+                <?php
+                get_search_form();
+            }
             ?>
         </div>
     </div>
