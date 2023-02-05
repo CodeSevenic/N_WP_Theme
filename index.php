@@ -28,7 +28,7 @@ get_header();
 
                         <?php
                         while (have_posts()) : the_post(); ?>
-                            <?php get_template_part('template-parts/content') ?>
+                            <?php get_template_part('template-parts/content'); ?>
                         <?php endwhile;
                         ?>
                     </div>
@@ -36,6 +36,8 @@ get_header();
             <?php
 
             else:
+
+                get_template_part('template-parts/content-none');
 
             endif;
             ?>
