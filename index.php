@@ -35,6 +35,8 @@ get_header();
                 </div>
             <?php
 
+            else:
+
             endif;
             ?>
         </main>
