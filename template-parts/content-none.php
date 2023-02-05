@@ -34,9 +34,13 @@
                 <p>
                     <?php esc_html_e('Sorry but nothing matched your search item. Please try again with some different keywords', 'nettel'); ?>
                 </p>
-            <?php
+                <?php
                 get_search_form();
-            }
+            } else { ?>
+                <p>
+                    <?php esc_html_e('It seems like we cannot find what you are looking for. Perhaps search can help', 'nettel'); ?>
+                </p>
+            <?php }
             ?>
         </div>
     </div>
