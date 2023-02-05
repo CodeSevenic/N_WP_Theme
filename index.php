@@ -10,7 +10,7 @@ get_header();
     <div class="nettel-content">
         <main class="nettel-main" role="main">
             <?php
-            if (have_posts()) { ?>
+            if (have_posts())  : ?>
                 <div class="nettel-container">
                     <!--         Blog Title           -->
                     <?php
@@ -28,16 +28,14 @@ get_header();
 
                         <?php
                         while (have_posts()) : the_post(); ?>
-                            <div class="blog-index-post">
-                                <p class="post-tag">Post Tag</p>
-                                <h4 class="post-title"><?php the_title(); ?></h4>
-                                <div class="post-excerpt"><?php the_excerpt(); ?></div>
-                            </div>
+                            <?php get_template_part('template-parts/content') ?>
                         <?php endwhile;
                         ?>
                     </div>
                 </div>
-            <?php }
+            <?php
+
+            endif;
             ?>
         </main>
     </div>
