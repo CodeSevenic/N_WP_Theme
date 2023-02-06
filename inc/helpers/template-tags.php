@@ -107,3 +107,23 @@ function purpleweb_the_title($trim_character_count = 0): void
 
     echo strlen($title) >= $trim_character_count ? $title . '...' : $title;
 }
+
+function purpleweb_pagination() {
+    $allowed_tags = [
+        'span' => [
+            'class' => []
+        ],
+        'a' => [
+            'class' => [],
+            'href' => []
+        ]
+    ];
+
+    $args = [
+        'before_page_number' => '<span class="nettel-pagination-number">',
+        'after_page_number' => '</span>',
+        'prev_text' => '&#8249;',
+        'next_text' => '&#8250;'
+    ];
+    printf('<nav class="nettel-pagination">%s</nav>', wp_kses(paginate_links($args), $allowed_tags));
+}

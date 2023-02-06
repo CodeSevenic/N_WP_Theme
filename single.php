@@ -5,11 +5,9 @@
  * @package purpleWeb
  */
 
-get_header()
+get_header();
 ?>
 
-    <div class="nettel-post">
-        <main class="nettel-main" role="main">
             <?php
             if (have_posts())  : ?>
                 <div class="nettel-container">
@@ -42,7 +40,5 @@ get_header()
 
             endif;
             ?>
-        </main>
-    </div>
 
-<?php get_footer() ?>
+<?php get_footer(); ?>

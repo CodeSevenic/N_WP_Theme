@@ -170,3 +170,36 @@ header.site-header {
     padding-left: 30px;
 }
 
+/*  ============== Pagination Code =============== */
+.nettel-pagination {
+    font-family: 'Roboto', sans-serif;
+    margin: 60px auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nettel-pagination .next, .nettel-pagination .prev {
+    display: flex;
+    justify-content: center;
+    height: 49px;
+    width: 49px;
+    background-color: #3F0071;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.nettel-pagination .nettel-pagination-number {
+    font-weight: 900;
+    color: #2E2E2E;
+}
+
+
+.nettel-pagination .current .nettel-pagination-number {
+    font-weight: 900;
+    color: #711fb3;
+}
