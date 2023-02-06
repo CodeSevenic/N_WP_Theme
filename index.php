@@ -7,7 +7,7 @@
 get_header();
 ?>
 
-    <div class="nettel-content">
+    <div class="nettel-blog">
         <main class="nettel-main" role="main">
             <?php
             if (have_posts())  : ?>
@@ -25,10 +25,9 @@ get_header();
                     ?>
 
                     <div class="nettel-blog-index">
-
                         <?php
                         while (have_posts()) : the_post(); ?>
-                            <?php get_template_part('template-parts/content'); ?>
+                            <?php get_template_part('template-parts/content-blog'); ?>
                         <?php endwhile;
                         ?>
                     </div>
@@ -40,7 +39,6 @@ get_header();
                 get_template_part('template-parts/content-none');
 
             endif;
-            get_template_part('template-parts/content-none');
             ?>
         </main>
     </div>

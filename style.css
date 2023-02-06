@@ -22,7 +22,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    list-style: none;
     text-decoration: none;
 
 }
@@ -81,6 +80,7 @@ header.site-header {
     align-items: center;
     justify-content: space-between;
     gap: 60px;
+    list-style: none;
 }
 
 .nettel-navigation .custom-logo-link {
@@ -118,6 +118,10 @@ header.site-header {
     gap: 30px;
 }
 
+.post-title a {
+   color:  #28293E;
+}
+
 .post-tag {
     font-size: 14px;
     letter-spacing: 0.75px;
@@ -134,3 +138,35 @@ header.site-header {
     letter-spacing: 0.15px;
     line-height: 28px;
 }
+
+/* ========= Blog Post ==========*/
+.featured-post-image {
+    max-height: 507px;
+    overflow: hidden;
+}
+
+.featured-post-image img {
+    width: 100%;
+    height: auto;
+}
+
+.nettel-blog-post .post-main-content {
+    position: relative;
+    max-width: 1030px;
+    margin: -65px auto 0 auto;
+    background-color: #fff;
+    padding: 65px;
+}
+
+.nettel-blog-post .post-title a {
+    font-size: 65px;
+    line-height: 80px;
+    font-weight: 600;
+    letter-spacing: 0.45px;
+}
+
+.nettel-blog-post .post-main-content .post-content ul,
+.nettel-blog-post .post-main-content .post-content ol{
+    padding-left: 30px;
+}
+
