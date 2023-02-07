@@ -11,10 +11,12 @@ get_header();
             <?php
             if (have_posts())  : ?>
                 <div class="nettel-container">
+                    <div class="nettel-tags-and-search">
                     <?php
                     get_template_part('template-parts/components/blog/entry-all-tax');
                     get_search_form();
                     ?>
+                    </div>
                     <div class="nettel-blog-index">
                         <?php
                         while (have_posts()) : the_post(); ?>
