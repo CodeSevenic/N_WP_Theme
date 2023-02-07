@@ -29,3 +29,7 @@ function purpleweb_enqueue_scripts() {
 }
 
 
+function custom_rss_limit($length) {
+    return 6;
+}
+add_filter('pre_option_posts_per_rss', 'custom_rss_limit');

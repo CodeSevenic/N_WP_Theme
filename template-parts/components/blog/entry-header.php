@@ -14,18 +14,17 @@ $heading_class = ! empty( $hide_title ) && 'yes' === $hide_title ? 'hide' : '';
 $has_post_thumbnail = get_the_post_thumbnail($the_post_id);
 ?>
 
-<header class="entry-header">
     <?php
     // Feature image
     if ($has_post_thumbnail) { ?>
-        <div class="entry-image">
+        <div class="nettel-entry-image">
             <a href="<?php echo esc_url(get_permalink()); ?>">
                 <?php
                 the_post_custom_thumbnail(
                     $the_post_id,
                     'featured-thumbnail',
                     [
-                        'sizes' => '(max-width: 370px) 370px, 223px',
+                        'sizes' => '(max-width: 370px) 740px, 446px',
                         'class' => 'attachment-featured-large size-featured-image'
                     ]
                 );
@@ -34,4 +33,3 @@ $has_post_thumbnail = get_the_post_thumbnail($the_post_id);
         </div>
     <?php }
     ?>
-</header>

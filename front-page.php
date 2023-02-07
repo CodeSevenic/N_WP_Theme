@@ -8,6 +8,7 @@
 get_header()
 ?>
 
-<div>Front Page</div>
+<?php get_template_part('template-parts/components/home-hero');?>
+
 
 <?php get_footer() ?>

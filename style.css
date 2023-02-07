@@ -118,15 +118,104 @@ header.site-header {
     gap: 30px;
 }
 
+.nettel-entry-image {
+    margin-bottom: 20px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.nettel-entry-image a {
+    height: 223px;
+    display: block;
+}
+
+.nettel-entry-image a img {
+    object-fit: cover;
+    height: 100%;
+}
+
 .nettel-tags-and-search {
     display: flex;
-    gap: 40px;
-    align-items: center;
+    gap: 20px;
     padding: 50px 0;
 }
 
 .blog-categories.last-cat-item {
     flex-grow: 1;
+}
+
+.nettel-tags-and-search input[type="search"] {
+    font-family: 'Roboto', sans-serif;
+    color: #2E2E2E;
+    /*font-weight: 600;*/
+    font-size: 17px;
+    outline: none;
+    border: 2px solid #3F0071;
+    width: 349px;
+    min-height: 40px;
+    border-radius: 3px;
+    padding: 0 50px 0 20px;
+}
+
+.nettel-tags-and-search form[role="search"] {
+    max-height: 40px;
+    position: relative;
+}
+
+button.nettel-search-btn {
+    background: unset;
+    border: unset;
+    cursor: pointer;
+    position: absolute;
+    right: 16px;
+    top: 56%;
+    transform: translateY(-50%);
+}
+
+button.nettel-search-btn > svg {
+    width: 26px;
+    fill: #3F0071;
+}
+
+.nettel-tags-and-search form input::-webkit-input-placeholder {
+    color: #2E2E2E;
+}
+
+.nettel-tags-and-search form input:-moz-placeholder {
+    color: #2E2E2E;
+}
+
+.nettel-tags-and-search form input::-moz-placeholder {
+    color: #2E2E2E;
+}
+
+.nettel-tags-and-search form input:-ms-input-placeholder {
+    color: #2E2E2E;
+}
+
+.nav-post-tags {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: normal;
+    font-weight: 900;
+    color: #3F0071;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #3F0071;
+    border-radius: 3px;
+    padding: 10px 20px;
+}
+
+.nav-post-tags.all {
+    color: #fff;
+    background-color: #3F0071;
+}
+
+.post-title {
+    margin-bottom: 18px;
+    min-height: 90px;
 }
 
 .post-title a {
@@ -140,6 +229,8 @@ header.site-header {
     font-weight: 900;
     color: #3F0071;
     text-transform: uppercase;
+    margin-bottom: 12px;
+    display: inline-block;
 }
 
 .post-excerpt {
@@ -148,7 +239,77 @@ header.site-header {
     color: #28293E;
     letter-spacing: 0.15px;
     line-height: 28px;
+    margin-bottom: 10px;
 }
+
+span.span-reading-time > span {
+    font-size: 16px;
+    color: #3F0071;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+/* ======== Home Hero ===========*/
+
+.nettel-hero {
+    background-color: var(--bg-primary);
+}
+
+.nettel-hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 0;
+    gap: 30px;
+}
+
+.nettel-hero-text {
+    padding: 30px 0;
+}
+
+.nettel-hero-text > .pre-text {
+    font-size: 22px;
+    color: #DD6002;
+    letter-spacing: 1.55px;
+    line-height: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.nettel-hero-body-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #FFFFFF;
+    letter-spacing: 0.15px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.nettel-hero-text > h1 {
+    font-size: 60px;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    line-height: 80px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.nettel-hero-cta {
+    display: block;
+    padding: 18px 30px;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0.95px;
+    text-align: center;
+    line-height: 16px;
+    font-weight: 900;
+    width: fit-content;
+    background-color: #DD6002;
+    text-transform: uppercase;
+}
+
+
 
 /* ========= Blog Post ==========*/
 .featured-post-image {
@@ -315,7 +476,6 @@ footer .hubspot-form form input::-moz-placeholder {
 footer .hubspot-form form input:-ms-input-placeholder {
     color: white;
 }
-
 
 footer .hubspot-form form input[name="email"] {
     font-family: 'Roboto', sans-serif;
