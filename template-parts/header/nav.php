@@ -58,6 +58,9 @@ $header_menus = wp_get_nav_menu_items($header_menu_id);
                 </ul>
             <?php }
             ?>
+            <div class="mobile-menu">
+                <?php get_template_part('template-parts/components/svg-icons/menu-icon'); ?>
+            </div>
         </nav>
     </div>
 <?php

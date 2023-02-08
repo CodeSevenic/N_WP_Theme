@@ -45,7 +45,7 @@ function purpleweb_posted_on(): void
 
     // Post is modified
     if (get_the_time('U') !== get_the_modified_time('U')) {
-        $time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time> <time class="updated" datetime="%3$s">%4$s</time>';
+        $time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
     }
 
     $time_string = sprintf($time_string,
@@ -56,18 +56,18 @@ function purpleweb_posted_on(): void
     );
 
     $posted_on = sprintf(
-        esc_html_x('Posted on %s', 'post date', 'nettel'),
-        '<a href"' . esc_url(get_permalink()) . '" rel="bookmark">' . $time_string . '</a>'
+        esc_html_x('%s', 'post date', 'nettel'),
+        '<p rel="bookmark">' . ' | ' . $time_string . '</p>'
     );
 
-    echo '<span class="posted-on">' . $posted_on . '</span>';
+    echo $posted_on;
 }
 
 function purpleweb_posted_by(): void
 {
     $byline = sprintf(
-        esc_html_x(' by %s', 'post author', 'nettel'),
-        '<span class="author"><a href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . esc_html(get_the_author()) . '</a></span>'
+        esc_html_x(' %s', 'post author', 'nettel'),
+        '<span class="author">' . esc_html(get_the_author()) . ' '.  '</span>'
     );
 
     echo '<span class="byline">' . $byline . '</span>';

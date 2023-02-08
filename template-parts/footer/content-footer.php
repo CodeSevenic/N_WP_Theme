@@ -16,36 +16,44 @@
     <div class="footer-column">
         <h6>Quick Links</h6>
         <?php wp_nav_menu(array(
-            'theme_location'  => 'quick_links',
-            'menu'            => 'Quick Links',
-            'container'       => '',
+            'theme_location' => 'quick_links',
+            'menu' => 'Quick Links',
+            'container' => '',
             'container_class' => '',
-            'container_id'    => '',
-            'menu_class'      => '',
-            'menu_id'         => '',
-            'echo'            => true,
-            'fallback_cb'     => 'wp_page_menu',
-            'before'          => '',
-            'after'           => '',
-            'link_before'     => '',
-            'link_after'      => '',
-            'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-            'depth'           => 0,
-            'walker'          => ''
+            'container_id' => '',
+            'menu_class' => '',
+            'menu_id' => '',
+            'echo' => true,
+            'fallback_cb' => 'wp_page_menu',
+            'before' => '',
+            'after' => '',
+            'link_before' => '',
+            'link_after' => '',
+            'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+            'depth' => 0,
+            'walker' => ''
         )); ?>
     </div>
     <div class="footer-column">
         <h6>Office Location</h6>
         <span class="nettel-city">Johannesburg</span>
-        <p>123 Main St,<br>
-            Anytown, USA 12345</p>
+        <p>1st Floor, Hyde Gate, <br>
+            Park Lane<br>
+            Hyde Park,<br>
+            Johannesburg</p>
     </div>
     <div class="footer-column hubspot-form">
         <h6>Social Platforms</h6>
         <div class="footer-social">
-            <a href="#"><i class="facebook-icon"></i><?php get_template_part('template-parts/components/svg-icons/facebook-icon'); ?></a>
-            <a href="#"><i class="instagram-icon"></i><?php get_template_part('template-parts/components/svg-icons/instagram-icon'); ?></a>
-            <a href="#"><i class="linkedin-icon"></i><?php get_template_part('template-parts/components/svg-icons/linkedin-icon'); ?></a>
+            <a href="#"><i
+                        class="facebook-icon"></i><?php get_template_part('template-parts/components/svg-icons/facebook-icon'); ?>
+            </a>
+            <a href="#"><i
+                        class="instagram-icon"></i><?php get_template_part('template-parts/components/svg-icons/instagram-icon'); ?>
+            </a>
+            <a href="#"><i
+                        class="linkedin-icon"></i><?php get_template_part('template-parts/components/svg-icons/linkedin-icon'); ?>
+            </a>
         </div>
         <h6>Our Newsletter</h6>
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
