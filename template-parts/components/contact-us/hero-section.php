@@ -2,7 +2,8 @@
     <div class="nettel-container">
         <div class="nettel-contact-us-wrapper">
             <div class="image-icon">
-                <img src="/wp-content/uploads/2023/02/Header-Banner-Content2.png" alt="">
+                <?php $image_url = wp_get_attachment_image_src(87,'large', true); ?>
+                <img src="<?php echo $image_url[0] ?>" alt="">
             </div>
             <div class="contact-us-head-info">
                 <p class="pre-text">

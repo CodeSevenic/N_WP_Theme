@@ -852,6 +852,67 @@ footer .hubspot-form form input[type="submit"] {
     }
 }
 
+/* ================ Publish Advert ================*/
+.nettel-publish-ad {
+    background-color: var(--bg-primary);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+    padding: 24px 70px;
+    margin: 40px 0;
+}
+
+.nettel-cta-information {
+    flex-grow: 1;
+    max-width: 270px;
+}
+
+.netlel-logo-ad {
+    max-width: 100px;
+}
+
+.nettel-cta-information p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.nettel-cta-button a {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.95px;
+    background-color: #DC5F00;
+    padding: 10px 30px;
+    color: white;
+    outline: none;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    font-weight: 900;
+    border-radius: 3px;
+
+}
+
+/*=============== Blog RSS ==================*/
+.nettel-blog-rss {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    background-color: var(--bg-primary);
+}
+
+.nettel-blog-rss .post-title a {
+    font-size: 30px;
+    color: #FFFFFF;
+    letter-spacing: 0.25px;
+    line-height: 35px;
+    font-weight: 600;
+}
+
 @media screen and (max-width: 768px) {
     /*==== Home Hero =====*/
     .nettel-hero-image {
@@ -888,6 +949,22 @@ footer .hubspot-form form input[type="submit"] {
     .left-info-content {
         max-width: 100%;
     }
+
+    .nettel-cta-information p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .nettel-publish-ad {
+        padding: 24px 40px;
+    }
+
+    .nettel-cta-button a {
+        line-height: normal;
+    }
 }
 
 @media screen and (max-width: 620px) {
@@ -917,6 +994,11 @@ footer .hubspot-form form input[type="submit"] {
         display: flex;
         gap: 50px;
         padding: 60px 0;
+        flex-direction: column;
+    }
+
+    .nettel-publish-ad {
+        padding: 40px 40px;
         flex-direction: column;
     }
 }

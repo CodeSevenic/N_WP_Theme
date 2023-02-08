@@ -38,13 +38,7 @@ $has_post_thumbnail = get_the_post_thumbnail($the_post_id);
         <h1 class="post-title"><?php the_title(); ?></h1>
         <?php  get_template_part('template-parts/components/blog/entry-meta'); ?>
         <div class="post-content"><?php the_content(); ?></div>
-        <?php
-        wp_link_pages(
-            [
-                'before' => '<div class="page-links">' . esc_html__('Pages:', 'nettel'),
-                'after' => '</div>'
-            ]
-        );
-        ?>
+        <?php  get_template_part('template-parts/components/blog/publish-with-us'); ?>
     </div>
 </section>
+        <?php get_template_part('template-parts/components/blog-rss-feed'); ?>

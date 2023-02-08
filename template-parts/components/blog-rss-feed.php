@@ -1,6 +1,6 @@
 <?php
 $args = array(
-    'posts_per_page' => 6,
+    'posts_per_page' => 3,
     'orderby' => 'date',
     'order' => 'DESC',
 );
@@ -11,14 +11,8 @@ if (isset($_GET['tag'])) {
 }
 
 $posts = get_posts($args); ?>
-<div class="nettel-container latest-posts">
-    <div class="nettel-tags-and-search">
-        <?php
-        get_template_part('template-parts/components/blog/entry-latest-posts-tax');
-        ?>
-    </div>
-    <div class="nettel-blog-index">
-
+    <section class="nettel-blog-rss">
+        <div class="nettel-container">
         <?php
         if ($posts) {
             foreach ($posts as $post) {
@@ -49,8 +43,8 @@ $posts = get_posts($args); ?>
             echo 'No posts found';
         }
         ?>
-    </div>
+        </div>
+    </section>
     <div class="latest-posts-cta">
         <a href="<?php echo get_post_type_archive_link('post'); ?>">Read more articles here</a>
     </div>
-</div>
