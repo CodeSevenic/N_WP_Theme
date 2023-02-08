@@ -2,7 +2,7 @@
     <div class="nettel-container">
         <div class="nettel-contact-us-wrapper">
             <div class="image-icon">
-                <img src="wp-content/uploads/2023/02/Header-Banner-Content2.png" alt="">
+                <img src="/wp-content/uploads/2023/02/Header-Banner-Content2.png" alt="">
             </div>
             <div class="contact-us-head-info">
                 <p class="pre-text">
