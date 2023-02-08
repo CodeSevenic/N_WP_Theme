@@ -61,8 +61,7 @@ h4 {
     margin: 0 auto;
 }
 
-
-/* Header Styling */
+/* ======== Header Styling ========= */
 
 header.site-header {
     background-color: var(--bg-primary);
@@ -297,7 +296,7 @@ span.span-reading-time > span {
 
 .nettel-hero-cta {
     display: block;
-    padding: 18px 30px;
+    padding: 22px 30px;
     font-size: 16px;
     color: #FFFFFF;
     letter-spacing: 0.95px;
@@ -307,6 +306,94 @@ span.span-reading-time > span {
     width: fit-content;
     background-color: #DD6002;
     text-transform: uppercase;
+    border-radius: 3px;
+}
+
+/*========= TWO Column Section ==========*/
+.nettel-2-col-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 0 50px 0;
+    gap: 70px;
+}
+
+.nettel-2-col-info h2 {
+    font-size: 60px;
+    color: #28293E;
+    letter-spacing: 0.5px;
+    line-height: 65px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.nettel-2-col-body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #28293E;
+    letter-spacing: 0.15px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.nettel-2-col-info {
+    display: flex;
+    align-items: center;
+}
+
+.nettel-2-col-cta {
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0.95px;
+    text-align: center;
+    line-height: 16px;
+    font-weight: 900;
+    padding: 22px 40px;
+    background-color:#3F0071 ;
+    border-radius: 3px;
+    text-transform: uppercase;
+    display: block;
+    width: fit-content;
+}
+
+/* =========== Latest Posts ============*/
+.latest-posts {
+    padding-bottom: 50px;
+}
+
+.nettel-tags-and-search > .latest-posts-title {
+    flex-grow: 1;
+    font-size: 60px;
+    color: #28293E;
+    letter-spacing: 0.5px;
+    line-height: 65px;
+    font-weight: 600;
+}
+
+.nettel-container.latest-posts .blog-categories {
+    display: flex;
+    align-items: center;
+}
+
+.nettel-container.latest-posts .blog-categories a {
+    display: block;
+    margin: 0;
+}
+
+.latest-posts-cta > a {
+    display: block;
+    margin: 50px auto 0 auto;
+    background: #3F0071;
+    border-radius: 3px;
+    padding: 22px 30px;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0.95px;
+    text-align: center;
+    line-height: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    width: fit-content;
 }
 
 
