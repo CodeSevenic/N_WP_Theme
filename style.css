@@ -66,6 +66,18 @@ h4 {
 header.site-header {
     background-color: var(--bg-primary);
     padding: 30px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 108.06px;
+    box-shadow: 0 0 10px -6px #000;
+    z-index: 30;
+}
+
+.header-placeholder {
+    height: 107.06px;
+    background-color: var(--bg-primary);
 }
 
 .nettel-navigation {
@@ -566,6 +578,7 @@ fieldset.form-columns-2 {
 .featured-post-image {
     max-height: 507px;
     overflow: hidden;
+    border-radius: 3px;
 }
 
 .featured-post-image img {
@@ -578,7 +591,7 @@ fieldset.form-columns-2 {
     max-width: 1030px;
     margin: -65px auto 0 auto;
     background-color: #fff;
-    padding: 65px;
+    padding: 65px 65px 30px 65px;
 }
 
 .nettel-blog-post .post-title {
@@ -761,6 +774,7 @@ footer .hubspot-form form input[type="submit"] {
     border: none;
     cursor: pointer;
     font-weight: 900;
+    border-radius: 3px;
 }
 
 .legal-strip a, .legal-strip p {
@@ -811,7 +825,23 @@ footer .hubspot-form form input[type="submit"] {
     }
 
     .nettel-navigation .navigation-items {
-        display: none;
+        position: fixed;
+        flex-direction: column;
+        background: var(--bg-primary);
+        top: 0;
+        left: -100%;
+        width: 0;
+        bottom: 0;
+        z-index: 100;
+        justify-content: space-evenly !important;
+        padding: 20%;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nettel-navigation .navigation-items.menu-open {
+        display: flex;
+        left: 0;
+        width: 100%;
     }
 }
 
@@ -898,11 +928,55 @@ footer .hubspot-form form input[type="submit"] {
 }
 
 /*=============== Blog RSS ==================*/
+.nettel-blog-rss-section {
+    background-color: var(--bg-primary);
+    padding: 90px 0 70px 0;
+}
+
 .nettel-blog-rss {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
-    background-color: var(--bg-primary);
+    gap: 30px;
+}
+
+.nettel-blog-rss-section .nettel-blog-rss .post-excerpt {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #fff;
+    letter-spacing: 0.15px;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+.nettel-blog-rss-section .nettel-blog-rss .post-tag {
+    font-size: 14px;
+    letter-spacing: 0.75px;
+    line-height: normal;
+    font-weight: 900;
+    color: #dc5f00;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+.nettel-blog-rss-section .latest-posts-cta > a {
+    display: block;
+    margin: 50px auto 0 auto;
+    background: #dc5f00;
+    border-radius: 3px;
+    padding: 22px 30px;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0.95px;
+    text-align: center;
+    line-height: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.nettel-blog-rss-section .nettel-blog-rss .span-reading-time {
+    display: none;
 }
 
 .nettel-blog-rss .post-title a {
@@ -964,6 +1038,10 @@ footer .hubspot-form form input[type="submit"] {
 
     .nettel-cta-button a {
         line-height: normal;
+    }
+
+    .nettel-blog-rss {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 }
 
@@ -1030,5 +1108,9 @@ footer .hubspot-form form input[type="submit"] {
         margin: -65px auto 0 auto;
         background-color: #fff;
         padding: 30px 20px;
+    }
+
+    main.blog-post > div {
+        padding: 0;
     }
 }

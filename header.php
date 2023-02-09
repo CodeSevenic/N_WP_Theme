@@ -27,4 +27,5 @@
     <header id="masthead" class="site-header" role="banner">
         <?php get_template_part('template-parts/header/nav'); ?>
     </header>
+    <div class="header-placeholder"></div>
     <div id="content" class="site-content">

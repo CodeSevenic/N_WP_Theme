@@ -41,4 +41,4 @@ $has_post_thumbnail = get_the_post_thumbnail($the_post_id);
         <?php  get_template_part('template-parts/components/blog/publish-with-us'); ?>
     </div>
 </section>
-        <?php get_template_part('template-parts/components/blog-rss-feed'); ?>
+

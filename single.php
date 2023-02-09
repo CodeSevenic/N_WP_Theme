@@ -10,6 +10,7 @@ get_header();
 
             <?php
             if (have_posts())  : ?>
+            <main class="blog-post">
                 <div class="nettel-container">
                     <!--         Blog Title           -->
                     <?php
@@ -32,6 +33,8 @@ get_header();
                         ?>
                     </div>
                 </div>
+                <?php get_template_part('template-parts/components/blog-rss-feed'); ?>
+            </main>
             <?php
 
             else:
