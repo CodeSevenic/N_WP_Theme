@@ -20,10 +20,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 *, *::after, *::before {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     text-decoration: none;
-
 }
 
 :root {
@@ -32,12 +29,16 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 body {
     font-family: 'Montserrat', sans-serif;
-
+    margin: 0;
 }
 
 img {
     width: 100%;
     height: auto;
+}
+
+h1,h2,h3,h4, h5, h6 {
+    margin: 0;
 }
 
 h1 {
@@ -71,7 +72,7 @@ header.site-header {
     left: 0;
     right: 0;
     height: 108.06px;
-    box-shadow: 0 0 10px -6px #000;
+    /*box-shadow: 0 0 10px -6px #000;*/
     z-index: 30;
 }
 
@@ -106,9 +107,11 @@ header.site-header {
 
 .navigation-items li a {
     font-size: 16px;
-    color: #fff;
-    text-transform: uppercase;
+    color: #FFFFFF;
+    letter-spacing: 0.95px;
+    text-align: center;
     font-weight: 700;
+    text-transform: uppercase;
 
 }
 
@@ -265,6 +268,7 @@ button.nettel-search-btn > svg {
     font-weight: 900;
     color: #3F0071;
     text-transform: uppercase;
+    margin-top: 0;
     margin-bottom: 12px;
     display: inline-block;
 }
@@ -280,6 +284,10 @@ button.nettel-search-btn > svg {
     letter-spacing: 0.15px;
     line-height: 35px;
     font-weight: 500;
+}
+
+.entry-meta * {
+    margin: 0;
 }
 
 .post-excerpt {
@@ -307,7 +315,7 @@ span.span-reading-time > span {
 .nettel-hero-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 50px 0;
+    padding: 50px 0 70px 0;
     gap: 30px;
 }
 
@@ -322,7 +330,6 @@ span.span-reading-time > span {
     line-height: 22px;
     font-weight: 900;
     text-transform: uppercase;
-    margin-bottom: 10px;
 }
 
 .nettel-hero-body-text {
@@ -415,7 +422,7 @@ span.span-reading-time > span {
 .nettel-contact-us-wrapper {
     display: flex;
     gap: 50px;
-    padding: 60px 0;
+    padding: 60px 0 75px 0;
 }
 
 .contact-us-form-wrapper {
@@ -669,6 +676,7 @@ footer a {
 
 .footer-column ul {
     list-style: none;
+    padding: 0;
 }
 
 .footer-column ul li {
@@ -842,6 +850,7 @@ footer .hubspot-form form input[type="submit"] {
         display: flex;
         left: 0;
         width: 100%;
+        height: 100%;
     }
 }
 
@@ -879,6 +888,10 @@ footer .hubspot-form form input[type="submit"] {
         margin: -65px auto 0 auto;
         background-color: #fff;
         padding: 30px 40px;
+    }
+
+    .nettel-tags-and-search input[type="search"] {
+        width: 100%;
     }
 }
 
@@ -1049,7 +1062,7 @@ footer .hubspot-form form input[type="submit"] {
     footer #footer-menu {
         display: grid;
         grid-template-columns: repeat(1, minmax(0, 1fr));
-        padding: 74px 30px;
+        padding: 74px 0px;
         gap: 50px;
     }
 
