@@ -7,7 +7,7 @@ $args = array(
 
 // Check if tag is set in the URL
 if (isset($_GET['tag'])) {
-    $args['tag'] = $_GET['tag'];
+    // $args['tag'] = $_GET['tag'];
 }
 
 $posts = get_posts($args); ?>
