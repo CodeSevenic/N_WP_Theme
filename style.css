@@ -16,7 +16,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;600;800&family=Roboto:wght@300;400;700&display=swap');
 
 *, *::after, *::before {
     box-sizing: border-box;
@@ -116,8 +116,9 @@ header.site-header {
 }
 
 .navigation-items li a.contact-us {
-    border: 2px solid #fff;
+    border: 3px solid #fff;
     padding: 12px 20px;
+    border-radius: 3px;
 }
 
 .nav-dropdown-menu {
@@ -534,6 +535,8 @@ fieldset.form-columns-2 {
 
 .hs-error-msgs {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .hs-error-msgs .hs-error-msg {
     color: red;
@@ -606,6 +609,10 @@ fieldset.form-columns-2 {
     line-height: 80px;
     font-weight: 600;
     letter-spacing: 0.45px;
+}
+
+.nettel-blog-post .post-main-content .post-content {
+    font-family: 'Roboto', sans-serif;
 }
 
 .nettel-blog-post .post-main-content .post-content ul,
@@ -938,6 +945,36 @@ footer .hubspot-form form input[type="submit"] {
     font-weight: 900;
     border-radius: 3px;
 
+}
+
+/* ================ General Overrides=================*/
+ul li:hover a,a:hover, .actions input[type="submit"]:hover {
+    color: #DC5F00 !important;
+    transition: all 0.3s;
+}
+
+.footer-social a:hover svg g path {
+    fill: white;
+    stroke: white;
+    transition: all 0.2s;
+}
+
+.mobile-menu:hover svg g {
+    fill: #DC5F00;
+    transition: all 0.3s;
+    stroke: #DC5F00;
+}
+
+.actions input[value="Subscribe"]:hover,
+.nettel-hero-cta:hover,
+.nettel-cta-button:hover a,
+.nettel-blog-rss-section .latest-posts-cta a:hover {
+    color: #3F0071 !important;
+    transition: all 0.3s;
+}
+
+.navigation-items li:hover a.contact-us {
+    border: 3px solid #DC5F00;
 }
 
 /*=============== Blog RSS ==================*/

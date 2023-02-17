@@ -8,6 +8,7 @@
 namespace PURPLEWEB_THEME\Inc;
 
 use PURPLEWEB_THEME\Inc\Traits\Singleton;
+use WP_Customize_Media_Control;
 
 class PURPLEWEB_THEME
 {
@@ -17,7 +18,6 @@ class PURPLEWEB_THEME
     protected function __construct()
     {
         // load class.
-
         Assets::get_instance();
         Menus::get_instance();
         Meta_Boxes::get_instance();
@@ -31,6 +31,7 @@ class PURPLEWEB_THEME
          * Actions.
          */
         add_action('after_setup_theme', [$this, 'setup_theme']);
+        add_action('customize_register', [$this, 'nettel_customize_register']);
 
 
     }
@@ -45,6 +46,14 @@ class PURPLEWEB_THEME
             'flex-height' => true,
             'flex-width' => true,
         ]);
+        add_theme_support('custom-logo-2', [
+            'header-text' => ['site-title', 'site-description'],
+            'height' => 400,
+            'width' => 400,
+            'flex-height' => true,
+            'flex-width' => true,
+        ]);
+
         add_theme_support('custom-background', [
             'default-color' => '#ffffff',
             'default-image' => '',
@@ -85,6 +94,18 @@ class PURPLEWEB_THEME
             $content_width = 1240;
         }
     }
+    // Add custom logo options to the customizer
+    function nettel_customize_register( $wp_customize ) {
+        $wp_customize->add_setting( 'custom_logo_2', array(
+            'default'           => '',
+            'transport'         => 'refresh',
+            'sanitize_callback' => 'absint',
+        ) );
 
-
+        $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'custom_logo_2', array(
+            'label'    => __( 'Logo 2' ),
+            'section'  => 'title_tagline',
+            'priority' => 9,
+        ) ) );
+    }
 }
