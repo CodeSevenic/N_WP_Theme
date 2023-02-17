@@ -68,7 +68,7 @@
 </div>
 <div class="legal-strip">
     <p>&copy; Nettel 2023</p>
-    <a href="#0">Terms and Conditions</a>
+    <a href="#0">Terms & Conditions</a>
     <a href="#0">Privacy Policy</a>
 </div>
 

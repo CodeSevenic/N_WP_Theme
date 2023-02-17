@@ -624,6 +624,7 @@ fieldset.form-columns-2 {
     margin: -65px auto 0 auto;
     background-color: #fff;
     padding: 65px 65px 30px 65px;
+    border-radius: 3px;
 }
 
 .nettel-blog-post .post-title {
@@ -635,6 +636,13 @@ fieldset.form-columns-2 {
 
 .nettel-blog-post .post-main-content .post-content {
     font-family: 'Roboto', sans-serif;
+}
+.nettel-blog-post .post-main-content .post-content p {
+    font-size: 19px;
+    color: #28293E;
+    letter-spacing: 0.15px;
+    line-height: 35px;
+    font-weight: 400;
 }
 
 .nettel-blog-post .post-main-content .post-content ul,
