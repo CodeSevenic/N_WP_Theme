@@ -15,11 +15,18 @@ $header_menus = wp_get_nav_menu_items($header_menu_id);
 //wp_die();
 ?>
 
-
     <div class="nettel-container">
         <nav class="nettel-navigation">
-            <?php if (function_exists('the_custom_logo')) {
-                the_custom_logo();
+
+            <?php
+            if (is_home() || is_single()) {
+                if (function_exists('the_custom_logo')) {
+                    nettel_custom_logo_2();
+                }
+            } else {
+                if (function_exists('the_custom_logo')) {
+                    the_custom_logo();
+                }
             }
             if (!empty($header_menus) && is_array($header_menus)) { ?>
                 <ul class="navigation-items">

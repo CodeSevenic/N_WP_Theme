@@ -23,8 +23,14 @@ if (function_exists('wp_body_open')) {
 }
 ?>
 <div id="page" class="site">
-    <header id="masthead" class="site-header" role="banner">
-        <?php get_template_part('template-parts/header/nav'); ?>
-    </header>
-    <div class="header-placeholder"></div>
-    <div id="content" class="site-content">
+    <?php
+    if (is_home() || is_single()) { ?>
+    <header id="masthead" class="site-header blog-header" role="banner">
+        <?php } else { ?>
+        <header id="masthead" class="site-header" role="banner">
+            <?php }
+            ?>
+            <?php get_template_part('template-parts/header/nav'); ?>
+        </header>
+        <div class="header-placeholder"></div>
+        <div id="content" class="site-content">

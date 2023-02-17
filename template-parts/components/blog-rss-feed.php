@@ -37,9 +37,7 @@ $posts = get_posts($args); ?>
                         echo do_shortcode('[rt_reading_time postfix="min" postfix_singular="min"]');
                         ?>
                     </article>
-
                     <?php ?>
-
             <?php }
                 wp_reset_postdata();
             } else {

@@ -32,8 +32,6 @@ class PURPLEWEB_THEME
          */
         add_action('after_setup_theme', [$this, 'setup_theme']);
         add_action('customize_register', [$this, 'nettel_customize_register']);
-
-
     }
 
     public function setup_theme()

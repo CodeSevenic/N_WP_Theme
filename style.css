@@ -16,7 +16,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;600;800&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;700&display=swap');
 
 *, *::after, *::before {
     box-sizing: border-box;
@@ -37,7 +37,7 @@ img {
     height: auto;
 }
 
-h1,h2,h3,h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
@@ -47,6 +47,7 @@ h1 {
     line-height: 1.15;
     letter-spacing: 0.5px;
 }
+
 h4 {
     font-weight: 600;
     font-size: 1.875rem;
@@ -54,7 +55,6 @@ h4 {
     letter-spacing: 0.25px;
     color: #28293E;
 }
-
 
 
 .nettel-container {
@@ -66,18 +66,18 @@ h4 {
 
 header.site-header {
     background-color: var(--bg-primary);
-    padding: 30px 0;
+    padding: 50px 0 50px 0;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 108.06px;
+    height: 151px;
     /*box-shadow: 0 0 10px -6px #000;*/
     z-index: 30;
 }
 
 .header-placeholder {
-    height: 107.06px;
+    height: 151px;
     background-color: var(--bg-primary);
 }
 
@@ -137,6 +137,27 @@ header.site-header {
 .mobile-menu svg g {
     fill: #fff;
     stroke: #fff;
+}
+
+/*============= Blog Header Styling =============*/
+header#masthead.blog-header {
+    background: white;
+}
+
+.blog-header .navigation-items li a {
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0.95px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.blog-header .navigation-items li a.contact-us {
+    border: 3px solid #3F0071;
+    padding: 12px 20px;
+    border-radius: 3px;
+    color: #3F0071;
 }
 
 
@@ -248,7 +269,7 @@ button.nettel-search-btn > svg {
 }
 
 .post-title a {
-   color:  #28293E;
+    color: #28293E;
 }
 
 .post-tag {
@@ -316,7 +337,7 @@ span.span-reading-time > span {
 .nettel-hero-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 50px 0 70px 0;
+    padding: 50px 0 60px 0;
     gap: 30px;
 }
 
@@ -343,7 +364,7 @@ span.span-reading-time > span {
     margin-bottom: 40px;
 }
 
-.nettel-h1{
+.nettel-h1 {
     font-size: 60px;
     color: #FFFFFF;
     letter-spacing: 0.5px;
@@ -407,7 +428,7 @@ span.span-reading-time > span {
     line-height: 16px;
     font-weight: 900;
     padding: 22px 40px;
-    background-color:#3F0071 ;
+    background-color: #3F0071;
     border-radius: 3px;
     text-transform: uppercase;
     display: block;
@@ -465,7 +486,7 @@ span.span-reading-time > span {
     margin-bottom: 40px;
 }
 
-.contact-us-form>div {
+.contact-us-form > div {
     box-shadow: 0 0 15px -5px;
     padding: 50px 40px;
     margin-top: -140px;;
@@ -493,6 +514,7 @@ fieldset.form-columns-2 {
     line-height: 35px;
     font-weight: 400;
 }
+
 .contact-us-form form fieldset h3 {
     font-size: 30px;
     color: #3F0071;
@@ -500,28 +522,28 @@ fieldset.form-columns-2 {
     text-align: center;
     line-height: 35px;
     font-weight: 600;
-    max-width:380px;
+    max-width: 380px;
     margin: 0 auto;
 }
 
 .contact-us-form form fieldset input[name="firstname"],
 .contact-us-form form fieldset input[name="lastname"],
 .contact-us-form form fieldset input[name="email"],
-.contact-us-form form fieldset input[name="company"]{
+.contact-us-form form fieldset input[name="company"] {
     width: 100% !important;
     min-height: 37.52px;
     border: 2px solid #161B30;
     font-size: 17px;
 }
 
-.contact-us-form form fieldset textarea[name="message"]{
+.contact-us-form form fieldset textarea[name="message"] {
     width: 100% !important;
     min-height: 120px;
     border: 2px solid #161B30;
     font-size: 17px;
 }
 
-.contact-us-form form .actions input[type="submit"]{
+.contact-us-form form .actions input[type="submit"] {
     width: 100% !important;
     font-size: 17px;
     text-transform: uppercase;
@@ -538,6 +560,7 @@ fieldset.form-columns-2 {
     padding: 0;
     margin: 0;
 }
+
 .hs-error-msgs .hs-error-msg {
     color: red;
 }
@@ -583,7 +606,6 @@ fieldset.form-columns-2 {
 }
 
 
-
 /* ========= Blog Post ==========*/
 .featured-post-image {
     max-height: 507px;
@@ -616,7 +638,7 @@ fieldset.form-columns-2 {
 }
 
 .nettel-blog-post .post-main-content .post-content ul,
-.nettel-blog-post .post-main-content .post-content ol{
+.nettel-blog-post .post-main-content .post-content ol {
     padding-left: 30px;
 }
 
@@ -690,7 +712,7 @@ footer a {
     margin-bottom: 14px;
 }
 
-.footer-column ul li a, .footer-column p  {
+.footer-column ul li a, .footer-column p {
     font-size: 17px;
     line-height: 28px;
     color: #fff;
@@ -715,6 +737,7 @@ footer .footer-social {
     gap: 20px;
     margin-bottom: 30px;
 }
+
 footer .footer-social a {
     display: block;
     width: 70px;
@@ -948,7 +971,7 @@ footer .hubspot-form form input[type="submit"] {
 }
 
 /* ================ General Overrides=================*/
-ul li:hover a,a:hover, .actions input[type="submit"]:hover {
+ul li:hover a, a:hover, .actions input[type="submit"]:hover {
     color: #DC5F00 !important;
     transition: all 0.3s;
 }
@@ -1059,7 +1082,7 @@ ul li:hover a,a:hover, .actions input[type="submit"]:hover {
         gap: 30px;
     }
 
-    .contact-us-form>div {
+    .contact-us-form > div {
         margin-top: unset;
     }
 
@@ -1142,7 +1165,7 @@ ul li:hover a,a:hover, .actions input[type="submit"]:hover {
         padding: 0 24px;
     }
 
-    .contact-us-form>div {
+    .contact-us-form > div {
         padding: 50px 20px;
     }
 
