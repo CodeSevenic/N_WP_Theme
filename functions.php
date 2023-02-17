@@ -33,6 +33,7 @@ function custom_rss_limit($length) {
     return 6;
 }
 
+// Filter functions
 // Function to render the custom logo 2
 function nettel_custom_logo_2(): void
 {
@@ -42,4 +43,11 @@ function nettel_custom_logo_2(): void
         echo '<a href="' . esc_url( home_url( '/' ) ) . '" class="custom-logo-link" rel="home"><img src="' . esc_url( $custom_logo_2[0] ) . '" class="custom-logo-2" alt="' . get_bloginfo( 'name' ) . '"></a>';
     }
 }
+
+function add_linkedin_contactmethod( $contactmethods ) {
+    // Add LinkedIn
+    $contactmethods['linkedin'] = 'LinkedIn';
+    return $contactmethods;
+}
+add_filter( 'user_contactmethods', 'add_linkedin_contactmethod', 10, 1 );
 add_filter('pre_option_posts_per_rss', 'custom_rss_limit');
