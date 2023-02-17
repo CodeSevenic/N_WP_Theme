@@ -197,7 +197,7 @@ header#masthead.blog-header {
 .nettel-tags-and-search input[type="search"] {
     font-family: 'Roboto', sans-serif;
     color: #2E2E2E;
-    /*font-weight: 600;*/
+    font-weight: 600;
     font-size: 17px;
     outline: none;
     border: 2px solid #3F0071;
@@ -217,7 +217,7 @@ button.nettel-search-btn {
     border: unset;
     cursor: pointer;
     position: absolute;
-    right: 16px;
+    right: 5px;
     top: 56%;
     transform: translateY(-50%);
 }
@@ -640,6 +640,28 @@ fieldset.form-columns-2 {
 .nettel-blog-post .post-main-content .post-content ul,
 .nettel-blog-post .post-main-content .post-content ol {
     padding-left: 30px;
+}
+
+a.nettel-author-linkedin {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 19px;
+    color: #28293E;
+    letter-spacing: 0.15px;
+    line-height: 35px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+a.nettel-author-linkedin:hover {
+    color: #28293E !important;
+}
+
+a.nettel-author-linkedin img {
+    display: inline-block;
+    height: 53px;
+    width: 53px;
 }
 
 /*  ============== Pagination Code =============== */

@@ -42,11 +42,12 @@ $has_post_thumbnail = get_the_post_thumbnail($the_post_id);
         <?php get_template_part('template-parts/components/blog/publish-with-us'); ?>
 
         <?php
+        $author_name = get_the_author();
         $author_id = get_the_author_meta('ID');
         $author_linkedin = get_the_author_meta('linkedin', $author_id);
         $linkedin_icon = wp_get_attachment_image_src(102,"large", true);
         if ($author_linkedin) {
-            echo '<a class="nettel-author-linkedin" href="' . $author_linkedin . '" target="_blank"> <img src="'. $linkedin_icon[0] . '" alt=""></a>';
+            echo '<a class="nettel-author-linkedin" href="' . $author_linkedin . '" target="_blank">Connect with ' . $author_name . ' on LinkedIn: <img src="'. $linkedin_icon[0] . '" alt=""></a>';
         }
         ?>
     </div>
