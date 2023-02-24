@@ -32,7 +32,7 @@ class PURPLEWEB_THEME
          */
         add_action('after_setup_theme', [$this, 'setup_theme']);
         add_action('customize_register', [$this, 'nettel_customize_register']);
-        add_action( 'template_redirect', [$this,'custom_404_error_page'] );
+//        add_action( 'template_redirect', [$this,'custom_404_error_page'] );
     }
 
     public function setup_theme()
