@@ -745,6 +745,9 @@ a.nettel-author-linkedin img {
     min-height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nettel-404-container p {
