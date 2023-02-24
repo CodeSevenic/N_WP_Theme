@@ -770,11 +770,15 @@ a.nettel-author-linkedin img {
 }
 
 a.nettel-404-back-home {
-
+    display: block;
+    width: 223px;
+    height: 58px;
 }
 
 a.nettel-404-contact-us {
-
+    display: block;
+    width: 223px;
+    height: 58px;
 }
 
 /* ========== Nettel Footer ============== */
