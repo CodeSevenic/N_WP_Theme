@@ -774,6 +774,7 @@ a.nettel-author-linkedin img {
 .nette-404-buttons {
     display: flex;
     gap: 30px;
+    margin-top: 30px;
 }
 
 .nette-404-buttons a {
