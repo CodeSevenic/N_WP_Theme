@@ -741,8 +741,8 @@ a.nettel-author-linkedin img {
 }
 
 /* ============== Nettel 404 page ===========*/
-.nette-404 {
-
+.nettel-404 {
+    min-height: 75vh;
 }
 
 
