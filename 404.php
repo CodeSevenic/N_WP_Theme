@@ -13,7 +13,12 @@ $page404img = wp_get_attachment_image_src(108,'large', true);
             <p class="nettel-404-text">404</p>
             <p class="nettel-404-not-found">Page not found!</p>
             <div class="nette-404-buttons">
-
+                <a class="nettel-404-back-home" href="">
+                    Back Home
+                </a>
+                <a href="" class="nettel-404-contact-us">
+                    Contact us
+                </a>
             </div>
         </div>
     </div>
