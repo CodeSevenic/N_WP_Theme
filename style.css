@@ -769,16 +769,22 @@ a.nettel-author-linkedin img {
     font-weight: 600;
 }
 
-a.nettel-404-back-home {
+.nette-404-buttons a {
     display: block;
     width: 223px;
     height: 58px;
 }
 
+a.nettel-404-back-home {
+    border: 3px solid #3F0071;
+    background: #3F0071;
+    border-radius: 3px;
+}
+
 a.nettel-404-contact-us {
-    display: block;
-    width: 223px;
-    height: 58px;
+    background: #28293E;
+    border: 3px solid #FFFFFF;
+    border-radius: 3px;
 }
 
 /* ========== Nettel Footer ============== */
