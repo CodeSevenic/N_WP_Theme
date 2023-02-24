@@ -8,6 +8,6 @@
 get_header()
 ?>
 
-    <div>404 page</div>
+    <div class="nettel-404"></div>
 
 <?php get_footer() ?>
