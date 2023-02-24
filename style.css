@@ -753,6 +753,7 @@ a.nettel-author-linkedin img {
 .nettel-404-container p {
     margin: 0;
     text-align: center;
+    line-height: 130px;
 }
 
 .nettel-404-text {
@@ -766,6 +767,14 @@ a.nettel-author-linkedin img {
     letter-spacing: 0.3px;
     line-height: 80px;
     font-weight: 600;
+}
+
+a.nettel-404-back-home {
+
+}
+
+a.nettel-404-contact-us {
+    
 }
 
 /* ========== Nettel Footer ============== */
