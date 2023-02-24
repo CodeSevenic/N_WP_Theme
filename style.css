@@ -741,6 +741,7 @@ a.nettel-author-linkedin img {
 }
 
 /* ============== Nettel 404 page ===========*/
+
 .nettel-404-page {
     min-height: 80vh;
     background-repeat: no-repeat;
@@ -748,6 +749,7 @@ a.nettel-author-linkedin img {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center;
 }
 
 .nettel-404-container p {
@@ -787,7 +789,7 @@ a.nettel-author-linkedin img {
     text-align: center;
     line-height: 16px;
     font-weight: 900;
-
+    margin: 0 auto;
 }
 
 a.nettel-404-back-home {
@@ -806,6 +808,26 @@ a.nettel-404-contact-us:hover {
     border: 3px solid #DC5F00;
     border-radius: 3px;
     transition: all 0.3s;
+}
+
+@media screen and (max-width: 767px) {
+    .nette-404-buttons {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .nettel-404-text {
+        font-size: 130px;
+    }
+
+    .nettel-404-not-found {
+        font-size: 24px;
+    }
+
+    .nettel-404-container p {
+        line-height: 80px;
+    }
 }
 
 /* ========== Nettel Footer ============== */

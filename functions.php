@@ -54,9 +54,9 @@ add_filter('pre_option_posts_per_rss', 'custom_rss_limit');
 
 // Custom 404 error page
 function custom_404_error_page() {
-    global $wp_query;
-    $wp_query->set_404();
-    include get_template_directory() . '/404.php';
-    exit();
+    if( is_404() ) {
+        include get_template_directory() . '/404.php';
+        exit();
+    }
 }
 add_action( 'template_redirect', 'custom_404_error_page' );
