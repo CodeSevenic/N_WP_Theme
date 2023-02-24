@@ -16,7 +16,7 @@ $page404img = wp_get_attachment_image_src(108,'large', true);
                 <a class="nettel-404-back-home" href="">
                     Back Home
                 </a>
-                <a href="" class="nettel-404-contact-us">
+                <a href="<?php home_url() ?>" class="nettel-404-contact-us">
                     Contact us
                 </a>
             </div>

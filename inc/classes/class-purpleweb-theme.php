@@ -109,10 +109,10 @@ class PURPLEWEB_THEME
     }
 
     // Custom 404 error page
-    function custom_404_error_page() {
-        global $wp_query;
-        $wp_query->set_404();
-        include get_template_directory() . '/404.php';
-        exit();
-    }
+//    function custom_404_error_page() {
+//        global $wp_query;
+//        $wp_query->set_404();
+//        include get_template_directory() . '/404.php';
+//        exit();
+//    }
 }

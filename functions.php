@@ -51,3 +51,12 @@ function add_linkedin_contactmethod( $contactmethods ) {
 }
 add_filter( 'user_contactmethods', 'add_linkedin_contactmethod', 10, 1 );
 add_filter('pre_option_posts_per_rss', 'custom_rss_limit');
+
+// Custom 404 error page
+function custom_404_error_page() {
+    global $wp_query;
+    $wp_query->set_404();
+    include get_template_directory() . '/404.php';
+    exit();
+}
+add_action( 'template_redirect', 'custom_404_error_page' );
