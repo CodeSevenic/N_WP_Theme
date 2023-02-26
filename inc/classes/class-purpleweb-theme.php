@@ -114,6 +114,5 @@ class PURPLEWEB_THEME
             include get_template_directory() . '/404.php';
             exit();
         }
-        
     }
 }
