@@ -32,7 +32,7 @@ class PURPLEWEB_THEME
          */
         add_action('after_setup_theme', [$this, 'setup_theme']);
         add_action('customize_register', [$this, 'nettel_customize_register']);
-//        add_action( 'template_redirect', [$this,'custom_404_error_page'] );
+        add_action( 'template_redirect', [$this, 'custom_404_error_page'] );
     }
 
     public function setup_theme()
@@ -109,10 +109,10 @@ class PURPLEWEB_THEME
     }
 
     // Custom 404 error page
-//    function custom_404_error_page() {
-//        global $wp_query;
-//        $wp_query->set_404();
-//        include get_template_directory() . '/404.php';
-//        exit();
-//    }
+    function custom_404_error_page() {
+        if( is_404() ) {
+            include get_template_directory() . '/404.php';
+            exit();
+        }
+    }
 }
