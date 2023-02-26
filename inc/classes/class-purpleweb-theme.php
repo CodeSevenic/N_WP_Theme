@@ -113,7 +113,6 @@ class PURPLEWEB_THEME
         if( is_404() ) {
             include get_template_directory() . '/404.php';
             exit();
-            
         }
     }
 }
