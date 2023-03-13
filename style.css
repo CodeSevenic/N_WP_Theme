@@ -125,6 +125,10 @@ header.site-header {
     display: none;
 }
 
+.mobile-close {
+    display: none;
+}
+
 .mobile-menu {
     cursor: pointer;
     display: none;
@@ -337,7 +341,7 @@ span.span-reading-time > span {
 .nettel-hero-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 50px 0 60px 0;
+    padding: 50px 0 80px 0;
     gap: 30px;
 }
 
@@ -1215,6 +1219,24 @@ ul li:hover a, a:hover, .actions input[type="submit"]:hover {
 }
 
 @media screen and (max-width: 768px) {
+    .mobile-close {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 40px;
+        right: 30px;
+        border: 2px solid white;
+        fill: white;
+        padding: 4px;
+        cursor: pointer;
+    }
+
+    .mobile-close:hover {
+        fill: #DD6002;
+        transition: all 0.3s;
+    }
+
     /*==== Home Hero =====*/
     .nettel-hero-image {
         order: -1;
@@ -1222,6 +1244,7 @@ ul li:hover a, a:hover, .actions input[type="submit"]:hover {
 
     .nettel-hero-content {
         grid-template-columns: 1fr;
+        padding: 50px 0 20px 0;
     }
 
     /*=========== Blog ===========*/

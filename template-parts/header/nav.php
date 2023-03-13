@@ -31,6 +31,7 @@ $header_menus = wp_get_nav_menu_items($header_menu_id);
             if (!empty($header_menus) && is_array($header_menus)) { ?>
                 <ul class="navigation-items">
                     <?php
+                    get_template_part('template-parts/components/svg-icons/close');
                     foreach ($header_menus as $menu_item) {
                         if (!$menu_item->menu_item_parent) {
                             $child_menu_items = $menu_class->get_child_menu_items($header_menus, $menu_item->ID);

@@ -43,18 +43,18 @@
             Johannesburg</p>
     </div>
     <div class="footer-column hubspot-form">
-        <h6>Social Platforms</h6>
-        <div class="footer-social">
-            <a href="#"><i
-                        class="facebook-icon"></i><?php get_template_part('template-parts/components/svg-icons/facebook-icon'); ?>
-            </a>
-            <a href="#"><i
-                        class="instagram-icon"></i><?php get_template_part('template-parts/components/svg-icons/instagram-icon'); ?>
-            </a>
-            <a href="#"><i
-                        class="linkedin-icon"></i><?php get_template_part('template-parts/components/svg-icons/linkedin-icon'); ?>
-            </a>
-        </div>
+<!--        <h6>Social Platforms</h6>-->
+<!--        <div class="footer-social">-->
+<!--            <a href="#"><i-->
+<!--                        class="facebook-icon"></i>--><?php //get_template_part('template-parts/components/svg-icons/facebook-icon'); ?>
+<!--            </a>-->
+<!--            <a href="#"><i-->
+<!--                        class="instagram-icon"></i>--><?php //get_template_part('template-parts/components/svg-icons/instagram-icon'); ?>
+<!--            </a>-->
+<!--            <a href="#"><i-->
+<!--                        class="linkedin-icon"></i>--><?php //get_template_part('template-parts/components/svg-icons/linkedin-icon'); ?>
+<!--            </a>-->
+<!--        </div>-->
         <h6>Our Newsletter</h6>
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
         <script>
@@ -68,7 +68,7 @@
 </div>
 <div class="legal-strip">
     <p>&copy; Nettel 2023</p>
-    <a href="#0">Terms & Conditions</a>
+<!--    <a href="#0">Terms & Conditions</a>-->
     <a href="#0">Privacy Policy</a>
 </div>
 

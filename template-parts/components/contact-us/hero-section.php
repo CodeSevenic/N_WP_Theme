@@ -3,7 +3,7 @@
         <div class="nettel-contact-us-wrapper">
             <div class="image-icon">
                 <?php $image_url = wp_get_attachment_image_src(87,'large', true); ?>
-                <img src="<?php echo $image_url[0] ?>" alt="">
+                <img src="<?php echo $image_url[0] ?>" alt="" class="lazy">
             </div>
             <div class="contact-us-head-info">
                 <p class="pre-text">

@@ -13,7 +13,7 @@
                         <p>We provide business leaders with the opportunity to
                             share their latest news and thought-provoking insights.</p>
                     </div>
-                    <a role="button" class="nettel-2-col-cta" href="/">Contribute</a>
+                    <a role="button" class="nettel-2-col-cta" href="<?php echo get_permalink(30) ?>">Contribute</a>
                 </div>
             </div>
         </div>
