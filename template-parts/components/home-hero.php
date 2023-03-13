@@ -12,7 +12,7 @@
                 <a href="#" class="nettel-hero-cta">How we work</a>
             </div>
             <div class="nettel-hero-image">
-                <img src="wp-content/uploads/2023/02/Header-Banner-Asset.png" alt="Hero image" class="hero-image">
+                <img src="wp-content/uploads/2023/02/Header-Banner-Asset.png" alt="Hero image" class="hero-image lazy">
             </div>
         </div>
     </div>

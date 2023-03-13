@@ -4,7 +4,7 @@
     <div class="nettel-container">
         <div class="nettel-2-col-content">
             <div class="nettel-2-col-image">
-                <img src="wp-content/uploads/2023/02/Thought-Leader-Asset.png" alt="Image">
+                <img class="lazy" src="wp-content/uploads/2023/02/Thought-Leader-Asset.png" alt="Image">
             </div>
             <div class="nettel-2-col-info">
                 <div class="nettel-2-col-info-wrapper">
