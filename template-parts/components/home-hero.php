@@ -4,11 +4,10 @@
     <div class="nettel-container">
         <div class="nettel-hero-content">
             <div class="nettel-hero-text">
-                <p class="pre-text">What we do</p>
-                <h1 class="nettel-h1">South Africa's thought leaders sharing business insights</h1>
+                <p class="pre-text"><?php the_field('sub-title'); ?></p>
+                <h1 class="nettel-h1"><?php the_field('title'); ?></h1>
                 <div class="nettel-hero-body-text">
-                    <p>We are a corporate publishing and networking platform that connects companies and their
-                        audiences.</p>
+                    <p><?php the_field('home-hero-description'); ?></p>
                 </div>
                 <a href="#" class="nettel-hero-cta">How we work</a>
             </div>
