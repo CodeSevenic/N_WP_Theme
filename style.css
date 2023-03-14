@@ -548,6 +548,7 @@ fieldset.form-columns-2 {
     min-height: 37.52px;
     border: 2px solid #161B30;
     font-size: 17px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .contact-us-form .gform_wrapper.gravity-theme .gfield textarea.large,
@@ -557,6 +558,7 @@ fieldset.form-columns-2 {
     border: 2px solid #161B30;
     font-size: 17px;
     height: auto;
+    font-family: 'Roboto', sans-serif;
 }
 
 .contact-us-form .gform_wrapper.gravity-theme .gform_footer input[type="submit"],
@@ -683,6 +685,7 @@ fieldset.form-columns-2 {
     line-height: 1.08;
     letter-spacing: 0.35px;
     font-weight: 700;
+    margin-bottom: 24px;
 }
 .nettel-blog-post .post-main-content .post-content h4 {
     font-family: 'Montserrat', sans-serif;
@@ -1324,6 +1327,16 @@ ul li:hover a, a:hover, .actions input[type="submit"]:hover,
 
     .nettel-blog-rss {
         grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .nettel-blog-post .post-main-content .post-content h3 {
+        font-size: 22px;
+        line-height: normal;
+    }
+
+    .nettel-blog-post .post-main-content .post-content h5 {
+        font-size: 18px;
+        line-height: normal;
     }
 }
 
