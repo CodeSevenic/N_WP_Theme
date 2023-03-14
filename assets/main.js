@@ -13,4 +13,4 @@ document.addEventListener('click', function(event) {
 
 // Set Gravity form row to 0
 const textarea = document.getElementById("input_2_5"); // get the textarea element by its ID
-// textarea.rows = 0;
+textarea.rows = 0;

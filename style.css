@@ -523,6 +523,7 @@ fieldset.form-columns-2 {
     font-weight: 400;
 }
 
+.contact-us-form .gform_wrapper.gravity-theme .gform_title,
 .contact-us-form form fieldset h3 {
     font-size: 30px;
     color: #3F0071;
@@ -532,6 +533,10 @@ fieldset.form-columns-2 {
     font-weight: 600;
     max-width: 380px;
     margin: 0 auto;
+}
+
+.contact-us-form .gform_wrapper.gravity-theme .gform_title {
+    margin-bottom: 34px;
 }
 
 .contact-us-form .gform_wrapper.gravity-theme .gfield input.large,
@@ -554,6 +559,7 @@ fieldset.form-columns-2 {
     height: auto;
 }
 
+.contact-us-form .gform_wrapper.gravity-theme .gform_footer input[type="submit"],
 .contact-us-form form .actions input[type="submit"] {
     width: 100% !important;
     font-size: 17px;
@@ -564,6 +570,15 @@ fieldset.form-columns-2 {
     color: #fff;
     border: none;
     cursor: pointer;
+}
+
+.contact-us-form .gform_wrapper.gravity-theme .gform_footer {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-us-form .gform_wrapper.gravity-theme .gform_footer input[type="submit"] {
+    margin-top: 34px;
 }
 
 .hs-error-msgs {
@@ -1141,7 +1156,8 @@ footer .hubspot-form form input[type="submit"] {
 }
 
 /* ================ General Overrides=================*/
-ul li:hover a, a:hover, .actions input[type="submit"]:hover {
+ul li:hover a, a:hover, .actions input[type="submit"]:hover,
+.gform_footer input[type="submit"]:hover{
     color: #DC5F00 !important;
     transition: all 0.3s;
 }
