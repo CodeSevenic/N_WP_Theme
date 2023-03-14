@@ -941,19 +941,24 @@ footer .hubspot-form form input:-ms-input-placeholder {
     color: white;
 }
 
+footer .gform_wrapper.gravity-theme input[id="input_1_1"],
 footer .hubspot-form form input[name="email"] {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
     line-height: 25px;
     font-weight: 400;
     letter-spacing: 0.15px;
-    width: 270px;
+    width: 270px !important;
     height: 55px;
     border: 2px solid white;
     background-color: #28293E;
     padding: 0 20px;
     color: white;
     outline: none;
+}
+
+footer .gform_wrapper.gravity-theme .gform_footer {
+    margin-top: 12px !important;
 }
 
 footer .hubspot-form form input[type="submit"] {

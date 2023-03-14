@@ -56,14 +56,15 @@
 <!--            </a>-->
 <!--        </div>-->
         <h6>Our Newsletter</h6>
-        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-        <script>
-            hbspt.forms.create({
-                region: "na1",
-                portalId: "2896934",
-                formId: "d010847d-d3d5-4e7a-a9fe-ace6de0c9b0e"
-            });
-        </script>
+<!--        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>-->
+<!--        <script>-->
+<!--            hbspt.forms.create({-->
+<!--                region: "na1",-->
+<!--                portalId: "2896934",-->
+<!--                formId: "d010847d-d3d5-4e7a-a9fe-ace6de0c9b0e"-->
+<!--            });-->
+<!--        </script>-->
+        <?php echo do_shortcode('[gravityform id="1" title="false"]'); ?>
     </div>
 </div>
 <div class="legal-strip">
