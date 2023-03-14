@@ -27,6 +27,7 @@
                         formId: "f723bb5a-1ec3-44da-b7e4-8b6b03030751"
                     });
                 </script>
+                <?php echo do_shortcode('[gravityform id="2" title="true"]'); ?>
             </div>
         </div>
     </div>

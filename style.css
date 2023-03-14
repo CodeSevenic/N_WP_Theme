@@ -509,7 +509,11 @@ fieldset.form-columns-2 {
     max-width: 100% !important;
     margin-bottom: 30px;
 }
+.contact-us-form .gform_wrapper.gravity-theme .gfield_required {
+    display: none;
+}
 
+.contact-us-form .gform_wrapper.gravity-theme .gfield_label,
 .contact-us-form form fieldset label {
     font-family: 'Roboto', sans-serif;
     font-size: 19px;
@@ -530,6 +534,7 @@ fieldset.form-columns-2 {
     margin: 0 auto;
 }
 
+.contact-us-form .gform_wrapper.gravity-theme .gfield input.large,
 .contact-us-form form fieldset input[name="firstname"],
 .contact-us-form form fieldset input[name="lastname"],
 .contact-us-form form fieldset input[name="email"],
@@ -540,11 +545,13 @@ fieldset.form-columns-2 {
     font-size: 17px;
 }
 
+.contact-us-form .gform_wrapper.gravity-theme .gfield textarea.large,
 .contact-us-form form fieldset textarea[name="message"] {
     width: 100% !important;
     min-height: 120px;
     border: 2px solid #161B30;
     font-size: 17px;
+    height: auto;
 }
 
 .contact-us-form form .actions input[type="submit"] {
