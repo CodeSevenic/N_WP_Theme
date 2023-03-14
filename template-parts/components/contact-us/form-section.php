@@ -9,7 +9,7 @@
                         accuracy of the content they write.
                     </p>
                     <h4>Unbiased & impartial:</h4>
-                    <p>We are fiercely independent. opinions and commentary comes from our community’s personal
+                    <p>We are fiercely independent. Opinions and commentary comes from our community’s personal
                         experiences.
 
                     </p>

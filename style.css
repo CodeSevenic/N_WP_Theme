@@ -638,6 +638,28 @@ fieldset.form-columns-2 {
 }
 
 
+/* =============Privacy Policy ===========*/
+main.privacy-policy {
+    font-family: 'Roboto', sans-serif;
+}
+
+main.privacy-policy > div {
+    padding: 60px 20px;
+    max-width: 1024px;
+}
+
+main.privacy-policy h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+main.privacy-policy h1, h2 , h3, h4 , h5 {
+    color: #3F0071;
+    margin-bottom: 20px;
+}
+
+
+
 /* ========= Blog Post ==========*/
 .featured-post-image {
     max-height: 507px;
