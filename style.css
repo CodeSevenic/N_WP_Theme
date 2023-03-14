@@ -572,6 +572,10 @@ fieldset.form-columns-2 {
     cursor: pointer;
 }
 
+.gform_ajax_spinner {
+    display: none !important;
+}
+
 .contact-us-form .gform_wrapper.gravity-theme .gform_footer {
     margin: 0;
     padding: 0;
@@ -647,9 +651,9 @@ fieldset.form-columns-2 {
 .nettel-blog-post .post-main-content {
     position: relative;
     max-width: 1030px;
-    margin: -65px auto 0 auto;
+    margin: -90px auto 0 auto;
     background-color: #fff;
-    padding: 65px 65px 30px 65px;
+    padding: 40px 65px 30px 65px;
     border-radius: 3px;
 }
 
